@@ -60,5 +60,3 @@ Resources
 ---------
 - pycat/python
 - [Tank and bullets](https://www.pixilart.com/art/tanks-0b452a9c87d9f9b), by Duderisfound
-- [Hard mode button](http://pixelartmaker.com/art/7ea8e8061b7519d), (not secure)
-- [UFO image](https://www.vecteezy.com/png/13743958-pixel-art-ufo), by pokpak

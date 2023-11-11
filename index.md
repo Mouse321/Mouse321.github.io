@@ -5,7 +5,7 @@ Description
 ----------
  Oh no! The aliens are attacking, HELP!                                                                                                                                   
  In order to save our beloved planet, you must play this game to fight off the aliens!                                                                                   
- YOUR job is to shoot down the aliens with a tank!                                                                                                                      
+ YOUR job is to shoot down the aliens with a tank!!!                                                                                                                      
 
 Features
 -------

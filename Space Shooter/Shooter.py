@@ -46,11 +46,14 @@ class Hardmodebutton(Sprite):
             sprite.color = Color.GREEN
         global Hardmode
         Hardmode = True
+    def on_update(self, dt):
+        if Hardmode == True:
+            self.color = Color.random_rgb()
 
 class Tank(Sprite):
     def on_create(self):
-        self.cooldown1 = 0.5
-        self.cooldown2 = 1.5
+        self.cooldown1 = 1
+        self.cooldown2 = 2
         self.image = 'Tank.png'
         self.rotation = 90
         self.position = 600,100
@@ -60,11 +63,11 @@ class Tank(Sprite):
         self.cooldown2 -= dt
         if window.is_key_down(KeyCode.SPACE) and self.cooldown1 <= 0.1:
             window.create_sprite(Bullet, position = self.position)
-            self.cooldown1 = 0.5
+            self.cooldown1 = 1
         if window.is_key_down(KeyCode.G) and self.cooldown2 <= 0.1:
             window.create_sprite(Sbullets, position = self.position)
             window.create_sprite(Sbullets, position = self.position)
-            self.cooldown2 = 1.5     
+            self.cooldown2 = 2
         if window.is_key_pressed(KeyCode.RIGHT):
             self.x += 5
         if window.is_key_pressed(KeyCode.LEFT):

@@ -1,7 +1,6 @@
 from pycat.core import Window, Sprite, Color, Point, RotationMode, KeyCode, Scheduler
 import random
-window = Window(background_image= 'Background.jpg')
-window.background_sprite.scale = 1.5
+window = Window()
 Hardmode = False
 waypoints = [
     Point(1000, 500),
@@ -57,7 +56,7 @@ class Tank(Sprite):
         self.image = 'Tank.png'
         self.rotation = 90
         self.position = 600,100
-        self.scale = 0.25
+        self.scale = 0.5
     def on_update(self, dt):
         self.cooldown1 -= dt
         self.cooldown2 -= dt
